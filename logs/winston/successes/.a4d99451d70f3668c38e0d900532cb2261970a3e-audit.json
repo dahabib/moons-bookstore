@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/.a4d99451d70f3668c38e0d900532cb2261970a3e-audit.json",
+    "files": [
+        {
+            "date": 1693673064506,
+            "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-02-09-22-success.log",
+            "hash": "148fb8fb9b07e714f9a6b82a9166090f7930b465cb0c053cd747e01d192b256e"
+        },
+        {
+            "date": 1693681043465,
+            "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-03-09-00-success.log",
+            "hash": "d99c9ac90d7b08e0c30d13501b2782d8ba42a5e435dac0ac4dc9fdda16d2f53b"
+        }
+    ],
+    "hashType": "sha256"
+}
