@@ -14,6 +14,21 @@
             "date": 1693681043465,
             "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-03-09-00-success.log",
             "hash": "d99c9ac90d7b08e0c30d13501b2782d8ba42a5e435dac0ac4dc9fdda16d2f53b"
+        },
+        {
+            "date": 1693688248307,
+            "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-03-09-02-success.log",
+            "hash": "a7318828a800ee3fe5f85d86cba2df8a918b29f9d0aaaad4ee4aff6c4ccb6147"
+        },
+        {
+            "date": 1693690408985,
+            "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-03-09-03-success.log",
+            "hash": "0d701df10cb19217dbc5ab8cc348282c13f74268f22d95eb3c1ea9d73638ad0b"
+        },
+        {
+            "date": 1693692133126,
+            "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-03-09-04-success.log",
+            "hash": "0a0fa84f126f4a96d56290fce511954018c529ba30fa6ea12f7086f70a0aa26b"
         }
     ],
     "hashType": "sha256"
