@@ -9,8 +9,7 @@ import prisma from '../../../shared/prisma';
 import { IUserLogin, IUserLoginResonse } from '../user/user.interface';
 
 const signupUser = async (payload: User): Promise<User> => {
-  const { name, email, password, role, contactNo, address, profileImg } =
-    payload;
+  const { password, ...otherInfo } = payload;
 
   const hashedPassword = await bcrypt.hash(
     password,
@@ -19,13 +18,8 @@ const signupUser = async (payload: User): Promise<User> => {
 
   const result = await prisma.user.create({
     data: {
-      name,
-      email,
       password: hashedPassword,
-      role,
-      contactNo,
-      address,
-      profileImg,
+      ...otherInfo,
     },
   });
   return result;
@@ -70,7 +64,7 @@ const loginUser = async (payload: IUserLogin): Promise<IUserLoginResonse> => {
   );
 
   return {
-    accessToken,
+    token: accessToken,
   };
 };
 

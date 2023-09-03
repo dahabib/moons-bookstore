@@ -4,7 +4,7 @@ export type IUserLogin = {
 };
 
 export type IUserLoginResonse = {
-  accessToken: string;
+  token: string;
 };
 
 export type IRefreshTokenResponse = {
