@@ -109,6 +109,16 @@
             "date": 1693886489889,
             "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-05-09-10-success.log",
             "hash": "a3afba55cc8d17abd159bb8a1a48008845af062aac24e933b3abbef0c8e29a9d"
+        },
+        {
+            "date": 1693917307101,
+            "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-05-09-18-success.log",
+            "hash": "d4d25ac1d0486c476f9e6eda1ea34a4d79d1bca384269fe6f45e23680423ba2a"
+        },
+        {
+            "date": 1693918899246,
+            "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-05-09-19-success.log",
+            "hash": "72b2fd8ce9c7b9a671aac815ca9b41d385e1a1be2a6e65a25651dfb624e88149"
         }
     ],
     "hashType": "sha256"
