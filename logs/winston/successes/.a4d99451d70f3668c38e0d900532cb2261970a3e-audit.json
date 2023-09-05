@@ -69,6 +69,46 @@
             "date": 1693774801646,
             "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-04-09-03-success.log",
             "hash": "968532249a04cd30f224af4387d49b88b87ea6e91374d6f7d7f13918bd4e8338"
+        },
+        {
+            "date": 1693850343584,
+            "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-04-09-23-success.log",
+            "hash": "0641e82426fc79f383582a5dafec74ac41377df06e21b91fe017c2da97607fee"
+        },
+        {
+            "date": 1693850486732,
+            "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-05-09-00-success.log",
+            "hash": "88eeb7472d327548339470c22d11a0780e43c138fc9c13faf9e15f76e5998c4d"
+        },
+        {
+            "date": 1693855075623,
+            "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-05-09-01-success.log",
+            "hash": "916448b2e5f474ac62fcb64e9ce93269d46cf689babb2a0a0c81bedbaf59b90b"
+        },
+        {
+            "date": 1693858283394,
+            "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-05-09-02-success.log",
+            "hash": "cd72105ae9964fc63143457f3c534a16face3dc47e74817d8a5ab370373894dc"
+        },
+        {
+            "date": 1693862199637,
+            "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-05-09-03-success.log",
+            "hash": "be7488d177b04838984ce81c787f3d022b881e3c47840ec46bee994c88211fd0"
+        },
+        {
+            "date": 1693864826756,
+            "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-05-09-04-success.log",
+            "hash": "1f30d14ae40d51ca8d8ddb9ff3fa599383892de5c14c58c1332ef3cb4f576f4a"
+        },
+        {
+            "date": 1693885439564,
+            "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-05-09-09-success.log",
+            "hash": "6d3660128ed6eb7e2cfd9955accb3668dc452938ea104dfc4fad8db2fba92428"
+        },
+        {
+            "date": 1693886489889,
+            "name": "/home/delwar/NextLevel/Assignment-8/moons-bookstore/logs/winston/successes/phu-2023-05-09-10-success.log",
+            "hash": "a3afba55cc8d17abd159bb8a1a48008845af062aac24e933b3abbef0c8e29a9d"
         }
     ],
     "hashType": "sha256"

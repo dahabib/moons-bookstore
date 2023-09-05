@@ -10,13 +10,13 @@ const getAllUsers = async () => {
 };
 
 // Get Single User
-const getSingleUser = async (id: string): Promise<User | null> => {
-  const result = await prisma.user.findUnique({
+const getSingleUser = async (id: string) => {
+  const user = await prisma.user.findUnique({
     where: {
       id,
     },
   });
-  // const result = exclude(user, ['password']);
+  const result = exclude(user, ['password']);
   return result;
 };
 

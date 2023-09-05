@@ -1,7 +1,9 @@
 import { Request, Response } from 'express';
 import httpStatus from 'http-status';
 import catchAsync from '../../../shared/catchAsync';
+import pick from '../../../shared/pick';
 import sendResponse from '../../../shared/sendResponse';
+import { bookFilterableFields } from './book.constants';
 import { BookService } from './book.service';
 
 // Create a book
@@ -18,12 +20,15 @@ const createBook = catchAsync(async (req: Request, res: Response) => {
 
 // Get all books
 const getAllBooks = catchAsync(async (req: Request, res: Response) => {
-  const result = await BookService.getAllBooks();
+  const filters = pick(req.query, bookFilterableFields);
+  const options = pick(req.query, ['size', 'page', 'sortBy', 'sortOrder']);
+  const result = await BookService.getAllBooks(filters, options);
   sendResponse(res, {
     statusCode: httpStatus.CREATED,
     success: true,
     message: 'All Books fetched successfully',
-    data: result,
+    meta: result.meta,
+    data: result.data,
   });
 });
 

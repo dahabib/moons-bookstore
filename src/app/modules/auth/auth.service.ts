@@ -39,7 +39,7 @@ const loginUser = async (payload: IUserLogin): Promise<IUserLoginResonse> => {
   if (!isUserExists) {
     throw new ApiError(httpStatus.NOT_FOUND, 'User does not exists');
   }
-  const { email: userEmail, role } = isUserExists;
+  const { id: userId, role } = isUserExists;
 
   const isPasswordMached = async function (
     givenPassword: string,
@@ -58,7 +58,7 @@ const loginUser = async (payload: IUserLogin): Promise<IUserLoginResonse> => {
 
   // generate access token
   const accessToken = jwtHelpers.generateToken(
-    { userEmail, role },
+    { role, userId },
     config.jwt.secret as Secret,
     config.jwt.expires_in as string
   );
