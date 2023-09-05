@@ -9,10 +9,11 @@ const createOrder = async (
   user: JwtPayload | null,
   payload: Order
 ): Promise<Order> => {
+  console.log(payload);
   return await prisma.order.create({
     data: {
       userId: user?.userId,
-      orderedBooks: payload.orderedBooks,
+      orderedBooks: payload as unknown as Prisma.OrderCreateorderedBooksInput,
     },
   });
 };

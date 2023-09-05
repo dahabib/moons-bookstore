@@ -34,8 +34,8 @@ const getAllOrders = catchAsync(async (req: Request, res: Response) => {
 // Get single order
 const getSingleOrder = catchAsync(async (req: Request, res: Response) => {
   const { id } = req.params;
-  const user: JwtPayload = req.user;
-  const result = await OrderService.getSingleOrder(id, user);
+  const user = req.user;
+  const result = await OrderService.getSingleOrder(id, user as JwtPayload);
 
   sendResponse(res, {
     statusCode: httpStatus.OK,
