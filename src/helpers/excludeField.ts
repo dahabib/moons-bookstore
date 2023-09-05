@@ -7,13 +7,17 @@ export function exclude<User, Key extends keyof User>(
   if (Array.isArray(users)) {
     return users.map(user => {
       return Object.fromEntries(
-        Object.entries(user).filter(([key]) => !keys.includes(key))
+        Object.entries(user as any).filter(
+          ([key]) => !keys.includes(key as any)
+        )
       ) as Omit<User, Key>;
     });
   } else {
     return [
       Object.fromEntries(
-        Object.entries(users).filter(([key]) => !keys.includes(key))
+        Object.entries(users as any).filter(
+          ([key]) => !keys.includes(key as any)
+        )
       ) as Omit<User, Key>,
     ];
   }
