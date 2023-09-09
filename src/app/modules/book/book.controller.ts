@@ -24,7 +24,7 @@ const getAllBooks = catchAsync(async (req: Request, res: Response) => {
   const options = pick(req.query, ['size', 'page', 'sortBy', 'sortOrder']);
   const result = await BookService.getAllBooks(filters, options);
   sendResponse(res, {
-    statusCode: httpStatus.CREATED,
+    statusCode: httpStatus.OK,
     success: true,
     message: 'All Books fetched successfully',
     meta: result.meta,
@@ -37,7 +37,7 @@ const getSingleBook = catchAsync(async (req: Request, res: Response) => {
   const result = await BookService.getSingleBook(req.params.id);
 
   sendResponse(res, {
-    statusCode: httpStatus.CREATED,
+    statusCode: httpStatus.OK,
     success: true,
     message: 'Book fetched successfully',
     data: result,
@@ -49,7 +49,7 @@ const getBooksByCategoryId = catchAsync(async (req: Request, res: Response) => {
   const result = await BookService.getBooksByCategoryId(req.params.categoryId);
 
   sendResponse(res, {
-    statusCode: httpStatus.CREATED,
+    statusCode: httpStatus.OK,
     success: true,
     message: 'Book fetched successfully',
     data: result,
@@ -64,7 +64,7 @@ const updateBook = catchAsync(async (req: Request, res: Response) => {
   const result = await BookService.updateBook(id, updatedData);
 
   sendResponse(res, {
-    statusCode: httpStatus.CREATED,
+    statusCode: httpStatus.OK,
     success: true,
     message: 'Book created successfully',
     data: result,
@@ -76,7 +76,7 @@ const deleteBook = catchAsync(async (req: Request, res: Response) => {
   const result = await BookService.deleteBook(req.params.id);
 
   sendResponse(res, {
-    statusCode: httpStatus.CREATED,
+    statusCode: httpStatus.OK,
     success: true,
     message: 'Book deleted successfully',
     data: result,

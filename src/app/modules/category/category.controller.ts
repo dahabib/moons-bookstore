@@ -21,7 +21,7 @@ const getAllCategories = catchAsync(async (req: Request, res: Response) => {
   const result = await CategoryService.getAllCategories();
 
   sendResponse(res, {
-    statusCode: httpStatus.CREATED,
+    statusCode: httpStatus.OK,
     success: true,
     message: 'All Categories fetched successfully.',
     data: result,
@@ -33,7 +33,7 @@ const getSingleCategory = catchAsync(async (req: Request, res: Response) => {
   const result = await CategoryService.getSingleCategory(req.params.id);
 
   sendResponse(res, {
-    statusCode: httpStatus.CREATED,
+    statusCode: httpStatus.OK,
     success: true,
     message: 'Category fetched successfully.',
     data: result,
@@ -48,7 +48,7 @@ const updateCategory = catchAsync(async (req: Request, res: Response) => {
   const result = await CategoryService.updateCategory(id, updatedData);
 
   sendResponse(res, {
-    statusCode: httpStatus.CREATED,
+    statusCode: httpStatus.OK,
     success: true,
     message: 'Category information updated successfully.',
     data: result,
@@ -60,7 +60,7 @@ const deleteCategory = catchAsync(async (req: Request, res: Response) => {
   const result = await CategoryService.deleteCategory(req.params.id);
 
   sendResponse(res, {
-    statusCode: httpStatus.CREATED,
+    statusCode: httpStatus.OK,
     success: true,
     message: 'Category deleted successfully.',
     data: result,
