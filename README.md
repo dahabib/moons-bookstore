@@ -6,18 +6,18 @@
 
 - <https://moons-bookstore.vercel.app/api/v1/auth/signup> (POST)
 - <https://moons-bookstore.vercel.app/api/v1/users> (GET)
-- <https://moons-bookstore.vercel.app/api/v1/users/6177a5b87d32123f08d2f5d4> (Single GET) Include an id that is saved in your database
-- <https://moons-bookstore.vercel.app/api/v1/users/6177a5b87d32123f08d2f5d4> (PATCH)
-- <https://moons-bookstore.vercel.app/api/v1/users/6177a5b87d32123f08d2f5d4> (DELETE) Include an id that is saved in your database
+- <https://moons-bookstore.vercel.app/api/v1/users/85e8035a-68aa-436b-a7c1-aaf979fd9e18> (Single GET) Include an id that is saved in your database
+- <https://moons-bookstore.vercel.app/api/v1/users/85e8035a-68aa-436b-a7c1-aaf979fd9e18> (PATCH)
+- <https://moons-bookstore.vercel.app/api/v1/users/85e8035a-68aa-436b-a7c1-aaf979fd9e18> (DELETE) Include an id that is saved in your database
 - <https://moons-bookstore.vercel.app/api/v1/profile> (GET)
 
 ### Category
 
 - <https://moons-bookstore.vercel.app/api/v1/categories/create-category> (POST)
 - <https://moons-bookstore.vercel.app/api/v1/categories> (GET)
-- <https://moons-bookstore.vercel.app/api/v1/categories/6177a5b87d32123f08d2f5d4> (Single GET) Include an id that is saved in your database
-- <https://moons-bookstore.vercel.app/api/v1/categories/6177a5b87d32123f08d2f5d4> (PATCH)
-- <https://moons-bookstore.vercel.app/api/v1/categories/6177a5b87d32123f08d2f5d4> (DELETE) Include an id that is saved in your database
+- <https://moons-bookstore.vercel.app/api/v1/categories/30fa1b8c-2adb-4790-9a2c-c4d9104df0ef> (Single GET) Include an id that is saved in your database
+- <https://moons-bookstore.vercel.app/api/v1/categories/30fa1b8c-2adb-4790-9a2c-c4d9104df0ef> (PATCH)
+- <https://moons-bookstore.vercel.app/api/v1/categories/30fa1b8c-2adb-4790-9a2c-c4d9104df0ef> (DELETE) Include an id that is saved in your database
 
 ### Books
 
