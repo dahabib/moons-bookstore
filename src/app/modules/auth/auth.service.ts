@@ -6,7 +6,7 @@ import config from '../../../config';
 import ApiError from '../../../errors/ApiError';
 import { jwtHelpers } from '../../../helpers/jwtHelpers';
 import prisma from '../../../shared/prisma';
-import { IUserLogin, IUserLoginResonse } from '../user/user.interface';
+import { IUserLogin } from '../user/user.interface';
 
 const signupUser = async (payload: User): Promise<User> => {
   const { password, ...otherInfo } = payload;
@@ -26,7 +26,7 @@ const signupUser = async (payload: User): Promise<User> => {
 };
 
 // login service
-const loginUser = async (payload: IUserLogin): Promise<IUserLoginResonse> => {
+const loginUser = async (payload: IUserLogin): Promise<any> => {
   const { email, password } = payload;
 
   // check if the user exists
@@ -57,15 +57,13 @@ const loginUser = async (payload: IUserLogin): Promise<IUserLoginResonse> => {
   }
 
   // generate access token
-  const accessToken = jwtHelpers.generateToken(
+  const token = jwtHelpers.generateToken(
     { role, userId },
     config.jwt.secret as Secret,
     config.jwt.expires_in as string
   );
 
-  return {
-    token: accessToken,
-  };
+  return token;
 };
 
 export const AuthService = {
